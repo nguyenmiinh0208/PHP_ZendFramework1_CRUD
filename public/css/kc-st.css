@@ -1,0 +1,952 @@
+@charset "UTF-8";
+/*-------------------------------------------------------
+ * 名称：受講者用スタイル
+ * 概要：各標準スタイルシートをインポートします。
+ *-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+
+   コンテンツエリアに関する定義
+
+ *-------------------------------------------------------*/
+
+table {
+    width: 100%;
+    font-size : 100%;
+}
+
+/* ==========================================================================
+   body色  権限毎
+   ========================================================================== */
+body.kc-co-page {
+    font-size: 14px;
+    line-height: 140%;
+    color: #313131;
+    background: #E3ECF3;
+}
+
+h2 {
+    font-size: 19px;
+    color: #19448e;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+    h2 > span {
+        border-bottom: 3px solid #19448E;
+    }
+
+h3 {
+    font-size: 19px;
+    color: #313131;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 2px;
+    padding: 5px 5px 5px 10px;
+    border-left: 6px solid #19448E;
+    border-radius: 0 !important;
+}
+
+h4 {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #19448E;
+    border-left: 10px solid #000000;
+    padding: 6px 28px 8px 28px;
+}
+
+/* ==========================================================================
+   タブメニュー  権限毎
+   ========================================================================== */
+
+
+.kc-co-default-pc .kc-co-s-menu-area-wrap {
+    background: #19448E;
+}
+
+.kc-co-default-pc a.kc-co-tab-active {
+    color: #ffffff !important;
+    background: #0C2247;
+}
+
+.kc-co-default-pc ul li a:hover {
+    color: #ffffff !important;
+    background: #0C2247;
+}
+
+/* パスワード変更
+   ========================================================================== */
+.kc-co-login-wrap .kc-co-border-box {
+    padding: 44px 0 44px 0;
+}
+    .kc-co-login-wrap .kc-co-border-box .kc-co-login-form  a {
+        text-decoration: none;
+    }
+    .kc-co-login-wrap .kc-co-border-box .kc-co-text-content {
+        padding: 0 30px 0 30px;
+    }
+
+/* new user
+   ========================================================================== */
+.kc-co-newuser-box {
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+    .kc-co-newuser-box .kc-co-newuser-form {
+        padding: 44px 90px 44px 90px;
+    }
+    .kc-co-newuser-box .kc-co-newuser-form .kc-co-newuser-wrap {
+        padding: 30px 0 26px 0;
+    }
+    .kc-co-newuser-box .kc-co-newuser-form .kc-co-newuser-wrap .kc-co-newuser-area {
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        margin: 10px 0 26px 0;
+        width: 642px;
+        padding: 20px 0 20px 16px;
+    }
+    .kc-co-newuser-box .kc-co-newuser-form .kc-co-newuser-wrap .kc-co-newuser-area div {
+        height: 110px;
+        overflow-y: auto;
+    }
+
+/* Login box
+   ========================================================================== */
+.kc-co-login-wrap {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+    .kc-co-login-wrap .kc-co-login-form {
+        padding: 40px 90px 0 90px;
+    }
+        .kc-co-login-wrap .kc-co-login-form .kc-co-width_L {
+            margin-bottom: 22px;
+            padding-left: 16px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            box-sizing: border-box;
+        }
+        .kc-co-login-wrap .kc-co-login-form .kc-co-width_XL {
+            margin-bottom: 28px;
+            padding-left: 16px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            box-sizing: border-box;
+        }
+        .kc-co-login-wrap .kc-co-login-form input {
+            width: 100%;
+            padding: 0 0 0 3px;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+        }
+        .kc-co-login-wrap .kc-co-login-form input:hover {
+            border: 1px solid #7eb4ea;
+        }
+
+/* mypage
+   ========================================================================== */
+
+.kc-co-profile-wrap {
+    margin: 0 0 2px 0;
+    padding: 10px 15px;
+}
+
+.kc-co-profile-wrap .kc-co-profile-info {
+    padding: 0px;
+}
+
+.kc-co-profile-item {
+    float: left;
+}
+
+.kc-co-profile-item span.kc-co-datetime {
+    color: #1559a6;
+}
+
+.kc-co-blue-link {
+    padding-left: 18px;
+    background: url("../img/icn_caret_right-textlink@2x.png") no-repeat;
+    background-size: 10px 10px;
+    background-position: left 50%;
+}
+
+.kc-st-profile-btn {
+    float: right;
+    display: table-cell;
+    vertical-algin: middle;
+}
+
+button.kc-st-profile-edit:hover {
+    opacity: 0.6;
+}
+
+button.kc-st-profile-edit {
+    width: 200px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #19448E;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15), inset -1px -1px 0px 0px rgba(255,255,255,0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+}
+
+
+.kc-st-profile-btn {
+    float: right;
+    display: table-cell;
+    vertical-algin: middle;
+}
+
+.kc-co-content-box > .kc-co-mypage-notice-list:last-child {
+    padding-bottom: 0;
+}
+
+.kc-co-mypage-notice-list {
+    margin: 0 0 2px 0;
+    padding: 15px;
+}
+.kc-co-mypage-notice-list > .kc-co-mypage-notice-item:last-child {
+    padding-bottom: 0;
+}
+
+
+
+.kc-co-mypage-notice-list .kc-co-mypage-notice-item {
+    padding: 0 0px 15px 0;
+    overflow: hidden;
+}
+.kc-co-mypage-notice-list .kc-co-mypage-notice-item .kc-co-notice-day-container {
+    width: 90px;
+    float: left;
+    margin-right: 9px;
+}
+
+.kc-co-mypage-notice-list .kc-co-mypage-notice-item .kc-co-notice-day {
+}
+.kc-co-mypage-notice-list  .kc-co-notice-link-container {
+    word-wrap :break-word;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.kc-co-mypage-notice-list  a.kc-co-notice-link {
+    text-decoration: none;
+}
+.kc-co-mypage-notice-list .kc-co-icn-require-container {
+    float: left;
+    width: 7em;
+    margin-right: 9px;
+}
+.kc-co-mypage-notice-list .kc-co-icn-require {
+}
+.kc-co-link-to-notice-list {
+    text-align: right;
+    padding: 6px;
+
+}
+
+.kc-co-mypage-faq-list {
+    margin: 0 0 2px 0;
+    padding: 9px 16px;
+}
+
+
+.kc-co-go-next-icon {
+    padding-left: 18px;
+    background: url(../img/icn_caret_right-textlink@2x.png) no-repeat;
+    background-size: 10px 10px;
+    background-position: left 50%;
+}
+
+.kc-co-course-list tr th {
+        color:#FFFFFF;
+        background-color: #19448E;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 24px;
+        padding: 16px 17px 16px 17px;
+    }
+
+.kc-co-course-list .kc-co-course-list-item {
+    background-color: #FFFFFF;
+}
+
+.kc-co-course-list .kc-co-course-list-item:hover {
+    background-color: #F2F2F2;
+}
+
+
+
+.kc-co-course-list .kc-co-course-list-item td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.kc-co-course-list tr:last-child td {
+    border-bottom: 0;
+}
+
+.kc-co-course-list-item  .kc-co-avatar-course0 {
+    width: 194px;
+}
+
+.kc-co-course-list-item  .kc-co-avatar-course {
+    width: 128px;
+    margin: 14px 20px;
+    background-color: #EEF1F6;
+    border-top: 5px solid #19448E;
+    border-right: 1px solid #8E8E8E;
+    border-bottom: 1px solid #8E8E8E;
+    border-left: 1px solid #8E8E8E;
+}
+
+.kc-co-course-list-item  .kc-co-avatar-course .kc-co-course-progress {
+    font-size: 12px;
+    color: #333333;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    background: #FFFFFF;
+}
+
+.kc-co-course-list-item .kc-co-sub-item {
+    padding-left: 24px;
+    background: url("../img/icn_child@2x.png") no-repeat;
+    background-size: 18px 18px;
+    background-position: 20px 50%;
+    border-bottom: 0;
+}
+
+
+.kc-co-red-line {
+    height: 0px;
+    overflow: hidden;
+    border-top: 2px solid #ED5959;
+}
+
+.kc-co-course-list-item .kc-co-course-information {
+    vertical-align: top;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+}
+
+.kc-co-course-training-session {
+    font-size: 11px;
+    font-weight: bold;
+    color: #397ac7;
+    padding: 3px 10px 2px 10px;
+    border: 1px solid #397aC7;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-e-learning0 {
+    padding-top: 5px;
+}
+
+.kc-co-course-e-learning {
+    font-size: 11px;
+    font-weight: bold;
+    color: #0000ff;
+    padding: 3px 10px 2px 10px;
+    border: 1px solid #0000FF;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-blend {
+    font-size: 11px;
+    font-weight: bold;
+    color: #953b30;
+    padding: 3px 10px 2px 10px;
+    border: 1px solid #953B30;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-education {
+    font-size: 11px;
+    font-weight: bold;
+    color: #006403;
+    padding: 3px 10px 2px 10px;
+    border: 1px solid #006403;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-remote-live {
+    font-size: 11px;
+    font-weight: bold;
+    color: #623eb3;
+    padding: 3px 10px;
+    border: 1px solid #623EB3;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-forum {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ac3eb3;
+    padding: 3px 10px;
+    border: 1px solid #AC3EB3;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #cc2d22;
+    padding: 3px 10px;
+    border: 1px solid #cc2d22;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-ticket {
+    font-size: 11px;
+    font-weight: bold;
+    color: #006080;
+    padding: 3px 10px;
+    border: 1px solid #006080;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+
+.kc-co-course-media {
+    font-size: 11px;
+    font-weight: bold;
+    color: #4c0000;
+    padding: 3px 10px;
+    border: 1px solid #4c0000;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFFF;
+    /*vertical-align: text-top;*/
+}
+.kc-co-course-list-item .kc-co-course-information .kc-co-course-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kc-co-course-list-item .kc-co-course-information ul.kc-co-course-info li {
+    display: inline;
+    margin-right: 12px;
+}
+
+.kc-co-course-list-item .kc-co-free-course-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.kc-co-course-list-item .kc-co-course-state {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.kc-co-border-bottom-top {
+    border-top: 1px solid #CCCCCC;
+}
+
+.kc-co-course-list-item .kc-co-pass-course {
+    font-size: 11px;
+    color: #176e54;
+    font-weight: bold;
+    width: 34px;
+    padding-top: 32px;
+    background: url("../img/icn_check_circle@2x.png") no-repeat;
+    background-size: 30px 30px;
+    background-position: 50% top;
+}
+
+.kc-co-course-list-item .kc-co-fail-course {
+    font-size: 11px;
+    width: 34px;
+    padding-top: 32px;
+    background: url("../img/icn_nocheck_circle@2x.png") no-repeat;
+    background-size: 30px 30px;
+    background-position: 50% top;
+}
+
+.kc-co-course-list-item .kc-co-course-attendance {
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 18px;
+}
+
+.kc-co-course-list-item .kc-co-course-attendance button.kc-co-btn-blue {
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #19448E;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15), inset -1px -1px 0px 0px rgba(255,255,255,0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+}
+button.kc-co-btn-blue:hover {
+    opacity: 0.6;
+}
+
+button.kc-co-btn-search {
+    width: 160px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15),inset -1px -1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+    padding: 0 20px;
+}
+
+button.kc-co-btn-search:hover {
+    opacity: 0.6;
+}
+
+button.kc-co-btn-for-more-information {
+    width: auto;
+    height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15),inset -1px -1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+    padding: 0 20px;
+}
+
+button.kc-co-btn-for-more-information:hover {
+    opacity: 0.6;
+}
+
+/*--------------------------------------------------------
+   受講者テーブルformat5に関する定義
+   -----------------------------------------------------*/
+
+ .kc-co-table-b.kc-co-table-b-format5 thead:first-child th, .kc-co-table-b.kc-co-table-b-format5 thead:first-child td{
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    padding-top: 8px;
+    padding-bottom: 8px;
+ }
+
+button.kc-co-lecture-ticket-button, button.kc-co-certificate-button{
+    width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #19448E;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15), inset -1px -1px 0px 0px rgba(255,255,255,0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+}
+
+button.kc-co-lecture-ticket-button:hover, button.kc-co-certificate-button:hover {
+        opacity: 0.6;
+}
+
+button.kc-co-btn-grey-auto:hover {
+        opacity: 0.6;
+}
+
+/* blendChild 受講履歴詳細画面ブレンド子コース情報用 */
+ .kc-co-table-b.kc-co-table-b-blendChild thead:first-child th, .kc-co-table-b.kc-co-table-b-blendChild thead:first-child td{
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    padding-top: 8px;
+    padding-bottom: 8px;
+ }
+
+
+/*--------------------------------------------------------
+   フリーコース一覧画面テーブル定義
+   -----------------------------------------------------*/
+.kc-co-free-course-table {
+    width: 100%;
+    background-color: #FFFFFF;
+    table-layout: fixed;
+}
+    .kc-co-free-course-table tr th {
+        color:#FFFFFF;
+        background-color: #19448E;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 24px;
+        padding: 16px 17px 16px 17px;
+    }
+
+    .kc-co-free-course-table tr td {
+        text-align: left;
+        vertical-align: middle;
+    }
+    table.kc-co-free-course-table tr:hover {
+        background-color: #F2F2F2;
+    }
+
+    table.kc-co-free-course-table td {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    table.kc-co-free-course-table .kc-co-course-state {
+        width: 90px;
+    }
+
+    table.kc-co-free-course-table .kc-co-course-attendance {
+        width: 120px;
+    }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+div.kc-login-footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    min-width: 750px;
+    color: #ffffff;
+    background-color: #19448E;
+    font-size: 90%;
+    bottom: 0px;
+    height: 25px;
+}
+
+div.kc-login-footer p.kc-login-copyright {
+    padding: 4px 0;
+    text-align: center;
+}
+
+div.kc-co-footer {
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    min-width: 960px;
+    color: #ffffff;
+    font-size: 90%;
+}
+
+div.kc-co-footer-abs {
+    clear: both;
+    position: absolute;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    min-width: 960px;
+    color: #ffffff;
+    font-size: 90%;
+}
+
+
+div.kc-co-footer p.kc-st-copyright {
+    padding: 4px 0;
+    background-color: #19448E;
+    text-align: center;
+}
+
+div.kc-co-footer-abs p.kc-st-copyright {
+    padding: 4px 0;
+    background-color: #19448E;
+    text-align: center;
+}
+
+table.kc-st-profile-edit {
+    width: 930px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+}
+
+    table.kc-st-profile-edit tr th,
+    table.kc-st-profile-edit tr td {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    table.kc-st-profile-edit tr:first-child th {
+        padding-top: 13px;
+        padding-bottom: 17px;
+    }
+
+    table.kc-st-profile-edit tr th {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    table.kc-st-profile-edit tbody tr td.kc-st-profile-public {
+        text-align: center;
+        width: 80px;
+    }
+
+.kc-co-results-table div.ending_result_block {
+    border: 1px solid #CCCCCC;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    padding-right: 8px;
+    margin: 13px 12px 10px 0px;
+}
+
+.kc-co-layer-table2 div.ending_result_block {
+    border: 1px solid #CCCCCC;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    padding-right: 8px;
+    margin: 0px 12px 10px 12px;
+}
+.kc-co-layer-table2 h3 {
+    margin-left: 12px;
+}
+.kc-st-test-exp {
+    padding: 0px 12px 0px 12px;
+}
+
+button.kc-co-btn-blue-auto {
+    height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #19448E;
+    border: 1px solid #19448E;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.15), inset -1px -1px 0px 0px rgba(255,255,255,0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.relevant-course-btn {
+    padding-bottom: 0px !important;
+}
+
+.relevant-course-btn div{
+    margin-top: -12px;
+    margin-bottom: 4px;
+}
+
+.relevant-course-btn a {
+    height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15), inset -1px -1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+table.kc-co-table-tr-border-bottom > tbody > tr:not(:last-child) {
+    border-bottom: 1px solid #CCCCCC;
+}
+table.kc-co-table-tr-border-top > tbody > tr:not(:first-child) {
+    border-top: 1px solid #CCCCCC;
+}
+table.kc-co-table-tr-border-1item > tbody > tr{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* クレジットカード決済規約の承認
+   ========================================================================== */
+.kc-co-credit-payment-box {
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+    .kc-co-credit-payment-box .kc-co-credit-payment-form {
+        padding: 34px 90px 44px 90px;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-credit-payment-wrap {
+        padding: 10px 0 26px 0;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-credit-payment-wrap textarea {
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        margin: 10px 0 26px 0;
+        width: 642px;
+        padding: 20px 0 20px 16px;
+        overflow-y: auto;
+        font-size: 90%;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-credit-payment-wrap .kc-co-introduction-area {
+        height: 120px;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-credit-payment-wrap .kc-co-contract-area {
+        height: 120px;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-btn-area {
+        margin: 0;
+        text-align: center;
+    }
+    .kc-co-credit-payment-box .kc-co-credit-payment-form .kc-co-btn-area .kc-co-btn-submit-blue{
+        width: 270px;
+    }
+
+/* キャリア選択
+   ========================================================================== */
+div.kc-co-contents-layer-wrap {
+    background: #ffffff;
+}
+
+/* Select Schedule
+   ========================================================================== */
+.kc-co-schedule-list-item {
+    background-color: #FFFFDD;
+}
+.kc-co-schedule-list-item .kc-co-sub-item {
+    padding-left: 24px;
+    background: url("../img/icn_child@2x.png") no-repeat;
+    background-size: 18px 18px;
+    background-position: 20px 50%;
+    border-bottom: 0;
+}
+.kc-co-out-in-box {
+    margin: 0 0 2px 0;
+    padding: 20px 270px;
+}
+
+.kc-co-content-box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    margin-top: 12px;
+}
+
+.kc-co-in-out button.kc-co-btn-blue {
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15), inset -1px -1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+}
+.kc-co-in-out button.kc-co-btn-blue:hover {
+    opacity: 0.6;
+}
+
+button.kc-co-btn-next-pre {
+	height: 26px;
+	width: 60px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #19448e;
+	background: #EFEFEF;
+	box-shadow: inset -2px -2px 0 0 rgba(25, 68, 142, 0.48);
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border: 1px solid #19448e;
+	margin-left: 15px;
+}
+button.kc-co-btn-next-pre:hover {
+    opacity: 0.6;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.kc-co-item-list {
+    margin-top: 10px !important;
+}
+.kc-co-item-list th {
+    padding: 3px;
+    border: 1px solid #333333;
+    font-weight: bold;
+}
+.kc-co-item-list td {
+    padding: 3px;
+    border: 1px solid #333333;
+    text-align: center;
+}
+.kc-co-list-box {
+    padding: 20px 50px;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

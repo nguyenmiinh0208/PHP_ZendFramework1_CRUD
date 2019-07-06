@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+ * 名称：マイポータルレイアウト別(パターン2)定義スタイルシート
+ * 概要：マイポータル設定(レイアウトパターン2)用のスタイル
+ *------------------------------------------------------------*/
+
+/*----- マイポータル、メニュー一覧の2列構成 -----*/
+div.kc-co-contents div.kc-co-2col {
+    width: 100%;
+}
+
+    div.kc-co-contents div.kc-co-2col:after {
+        content: "";
+        clear: both;
+        height: 0;
+        display: block;
+        visibility: hidden;
+    }
+
+    div.kc-co-contents div.kc-co-left {
+        width: 100%;
+        float: left;
+    }
+    div.kc-co-contents div.kc-co-right {
+        width: 0px;
+        float: right;
+    }
+
+/*----- FAQ用ボックス -----*/
+div.kc-co-contents div.kc-co-contents-faq-box-wrap {
+    display: none;
+}
+
+div.kc-co-contents div.kc-co-contents-faq-box {
+    display: none;
+}
+
+div.kc-co-contents div.kc-co-contents-faq-box:after {
+    
+}
+    
+/* カレンダー */
+div.kc-co-contents div.kc-co-contents-calendar-box-wrap {
+    display: none;
+}
+
+div.kc-co-contents div.kc-co-contents-calendar-box {
+    display: none;
+}
+
+div.kc-co-contents table.kc-co-contents-calendar {
+    
+}
+
+    div.kc-co-contents table.kc-co-contents-calendar caption.kc-caption-box {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar caption a,
+    div.kc-co-contents table.kc-co-contents-calendar caption span.kc-co-contents-calendar-yyyymm {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar caption span.kc-co-contents-calendar-yyyymm {
+        
+    }
+
+    div.kc-co-contents table.kc-co-contents-calendar th {
+        
+    }
+
+    div.kc-co-contents table.kc-co-contents-calendar th ,
+    div.kc-co-contents table.kc-co-contents-calendar td {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar th.kc-co-sunday ,
+    div.kc-co-contents table.kc-co-contents-calendar td.kc-co-sunday {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar th.kc-co-saturday ,
+    div.kc-co-contents table.kc-co-contents-calendar td.kc-co-saturday {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar td {
+        
+    }
+    
+    div.kc-co-contents table.kc-co-contents-calendar div.kc-co-contents-calendar-event-area {
+        
+    }

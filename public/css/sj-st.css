@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*-------------------------------------------------------
+ * 名称：受講者用スタイル
+ * 概要：各標準スタイルシートをインポートします。
+ *-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+
+   コンテンツエリアに関する定義
+
+ *-------------------------------------------------------*/
+ 
+/* ==========================================================================
+   body色  権限毎
+   ========================================================================== */
+body.sj-co-page {
+    font-size: 14px;
+    line-height: 140%;
+    color: #313131;
+    background: #E3ECF3;
+}
+h3 {
+    font-size: 19px;
+    color: #313131;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 2px;
+    padding: 5px 5px 5px 10px;
+    border-left: 6px solid #19448E;
+    border-radius: 0 !important;
+}
+
+/* ==========================================================================
+   タブメニュー  権限毎
+   ========================================================================== */
+.sj-co-s-menu-area-wrap {
+    background: #19448E;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.sj-co-content-box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    margin-top: 12px;
+}
+.sj-co-out-in-box {
+    margin: 0 0 2px 0;
+    padding: 20px 270px;
+}
+.sj-co-content-box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    margin-top: 12px;
+}
+table.sj-co-in-out {
+    width: 100%;
+    font-size: 100%;
+}
+.sj-co-in-out button.sj-co-btn-blue {
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #19448E;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15), inset -1px -1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #19448E;
+}
+.sj-co-in-out button.sj-co-btn-blue:hover {
+    opacity: 0.6;
+}
+button.sj-co-btn-next-pre {
+	height: 26px;
+	width: 60px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #19448e;
+	background: #EFEFEF;
+	box-shadow: inset -2px -2px 0 0 rgba(25, 68, 142, 0.48);
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border: 1px solid #19448e;
+	margin-left: 15px;
+}
+button.sj-co-btn-next-pre:hover {
+    opacity: 0.6;
+}
+.sj-co-item-list {
+    margin-top: 10px !important;
+}
+.sj-co-item-list th {
+    padding: 3px;
+    border: 1px solid #333333;
+    font-weight: bold;
+}
+.sj-co-item-list td {
+    padding: 3px;
+    border: 1px solid #333333;
+    text-align: center;
+}
+.sj-co-list-box {
+    padding: 20px 50px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+div.sj-co-footer {
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    min-width: 960px;
+    color: #ffffff;
+    font-size: 90%;
+}
+div.sj-co-footer p.sj-st-copyright {
+    padding: 4px 0;
+    background-color: #19448E;
+    text-align: center;
+}
